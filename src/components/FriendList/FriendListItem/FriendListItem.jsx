@@ -5,8 +5,7 @@ import { Status } from './FriendListItemStyles';
 export const FriendListItem = ({avatar, name, isOnline}) => {
     return (<li className={css.item}>
                 <Status className={css.status}
-                // style={{ backgroundColor: isOnline ? 'yellowgreen' : 'crimson' }}
-                isOnline={isOnline} //StyledComponents used...
+                isOnline={isOnline} 
                 >{isOnline}
                 </Status>
                 <img className={css.avatar} src={avatar} alt="User avatar" width="48" />
